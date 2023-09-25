@@ -7,7 +7,7 @@ const Tooltip = ({ position }) => {
 
   return (
     <div className={getClassname()}>
-      Thanks for hovering "{position}" position!
+      Thanks for hovering "{position}" Position!
     </div>
   );
 };
