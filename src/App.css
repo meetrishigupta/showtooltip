@@ -1,126 +1,135 @@
-/*.................................................................here we give the dimension to the app..........................................*/
 .App {
+  display: flex;
   width: 99vw;
   height: 99vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
-/*...........................................................Navbar position button.............................................*/
-
-.btn-position {
-  margin-left: 10%;
-  width: 80%;
-  margin-left: none;
-  height: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.grp-name {
-  margin-top: 20px;
-  font-style: Cursive;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-/*.......................................................css of the all avilable button..................................................*/
-
-.btn {
-  height: 60%;
-  margin-top: 1.1%;
-  width: 8%;
-  border: 3px solid grey;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/*...................................................css of the hover button container.....................................................*/
-
 #button-container {
-  width: 23%;
-  height: 15%;
-  margin-left: 39.5%;
-  margin-top: 23%;
+  width: 30%;
+  position: relative;
+  left: 35%;
 }
-
-/*................................................special feature added in the hover button..............................................*/
-
+h3:hover {
+  transition: all 0.5s;
+  color: rgb(253, 133, 133);
+}
 .hover-btn {
   cursor: pointer;
-  height: 100%;
-  width: 100%;
+  margin-top: 360px;
   font-size: 2.5rem;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: #61dbfb;
+  font-family: Inria Serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-
-/*...............................................................copyright content........................................................*/
-
-.copyright {
-  font-size: 1rem;
-  font-weight: 350;
-  margin-left: 40%;
-  margin-top: 10%;
-  width: 24%;
-  background-color: rgba(104, 23, 227, 0.1);
-  padding: 3px 3px 3px 7px;
-  border-radius: 7px;
-}
-
-/*................................................................css for the top position hover........................................*/
 
 .top {
-  height: 30%;
+  height: 25px;
+  width: 20%;
   cursor: pointer;
-  width: 50%;
-  margin-top: -50%;
-  margin-left: 20%;
   padding: 6px 10px 15px 10px;
   border: 1px solid black;
   border-radius: 10px;
   font-size: 1rem;
-  background-color: rgba(104, 23, 227, 0.1);
+  position: relative;
+  left: 40%;
+  margin-top: -150px;
+  background-color: rgba(12, 174, 238, 0.1);
 }
-
-/*................................................................css for the right position hover........................................*/
 
 .right {
-  height: 30%;
-  width: 50%;
-  margin-top: -22%;
-  margin-left: 105%;
+  height: 25px;
+  width: 20%;
+  margin-top: -7%;
+  position: relative;
+  left: 67%;
   padding: 6px 10px 15px 10px;
   border: 1px solid black;
   border-radius: 10px;
   font-size: 1rem;
-  background-color: rgba(104, 23, 227, 0.1);
+  background-color: rgba(12, 174, 238, 0.1);
 }
-
-/*................................................................css for the down position hover........................................*/
 
 .down {
-  height: 30%;
-  width: 50%;
-  margin-top: 5%;
-  margin-left: 20%;
+  height: 25px;
+  width: 20%;
+  position: relative;
+  left: 40%;
+  margin-top: -50px;
   padding: 6px 10px 15px 10px;
   border: 1px solid black;
   border-radius: 10px;
   font-size: 1rem;
-  background-color: rgba(104, 23, 227, 0.1);
+  background-color: rgba(12, 174, 238, 0.1);
 }
-
-/*................................................................csss for the left position hover........................................*/
 
 .left {
-  height: 30%;
-  width: 50%;
-  margin-top: -22%;
-  margin-left: -60%;
+  height: 25px;
+  width: 20%;
+  position: relative;
+  left: 12%;
   padding: 6px 10px 15px 10px;
   border: 1px solid black;
   border-radius: 10px;
+  margin-top: -7%;
   font-size: 1rem;
-  background-color: rgba(104, 23, 227, 0.1);
+  background-color: rgba(12, 174, 238, 0.1);
 }
-.active {
-  background-color: rgba(104, 23, 227, 0.3);
+
+.outer-box {
+  width: 80%;
+  height: 820px;
+  background: #f8f8f8;
+}
+.selection-box {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grp-name p {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 60px;
+  line-height: normal;
+}
+select {
+  width: 184px;
+  height: 55px;
+  background: #61dbfb;
+  border: none;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  padding-right: 10px;
+  border-right: 16px solid transparent;
+  border-radius: 5px;
+}
+img {
+  width: 165px;
+  height: 169px;
+  top: 300px;
+  position: absolute;
+  left: 45%;
+  right: 50%;
+  rotate: 90deg;
+}
+.branded-footer {
+  width: 80%;
+  background-color: antiquewhite;
+  text-align: center;
+  font-weight: 500;
 }
